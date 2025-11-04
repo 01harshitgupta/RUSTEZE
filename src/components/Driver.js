@@ -2,7 +2,7 @@ import React from 'react';
 
 const Driver = () => {
   const teamMembers = [
-    { name: 'Ansh Verma',  img: '/images/ansh.jpg' },
+    { name: 'Ansh Verma',  img: '/images/ansh1.jpg' },
     { name: 'Kushagra Bhandhari', img: '/images/kush.jpg' },
     
   ];

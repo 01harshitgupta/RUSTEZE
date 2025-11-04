@@ -2,7 +2,7 @@ import React from 'react';
 
 const Team = () => {
   const teamMembers = [
-    { name: 'Ansh Verma', role: 'Electrical Head', img: '/images/ansh.jpg', email: 'Ansh@example.com' },
+    { name: 'Ansh Verma', role: 'Electrical Head', img: '/images/ansh1.jpg', email: 'Ansh@example.com' },
     { name: 'Kushal Kumar', role: 'Designing Head', img: '/images/kushal.jpg', email: 'Kushal@example.com' },
     { name: 'Vivek', role: 'Mechanical Head', img: '/images/vivek.jpg', email: 'Vivek@example.com' },
     { name: 'Ayush', role: 'Mechanical Head', img: '/images/ayush.jpg', email: 'Ayush@example.com' },

@@ -27,18 +27,26 @@ function App() {
             <div className="hero-text">
               <h1>The Secret Life of a <br/> <span>RUSTEZE</span> Racer!</h1>
               <p className="hero-sub">We are a passionate team competing in the Go-Kart Design Challenge (GKDC).</p>
-              <button className="read-story-btn" onClick={() => setShowStory(true)}>Read Story</button>
+              <button 
+                className={`read-story-btn ${showStory ? 'active' : ''}`} 
+                onClick={() => setShowStory(!showStory)}
+              >
+                {showStory ? 'Hide Story' : 'Read Story'}
+              </button>
             </div>
           </div>
         </div>
 
-        
-        </motion.section>
-
-      {showStory && (
-        <div className="story-modal" onClick={() => setShowStory(false)}>
-          <div className="story-container" onClick={(e) => e.stopPropagation()}>
-            <button className="story-close" onClick={() => setShowStory(false)} aria-label="Close">×</button>
+        <motion.div 
+          className="story-content"
+          initial={{ opacity: 0, height: 0 }}
+          animate={{ 
+            opacity: showStory ? 1 : 0,
+            height: showStory ? 'auto' : 0
+          }}
+          transition={{ duration: 0.3 }}
+        >
+          <div className="story-container">
             <h2>RUSTEZE — Our Story</h2>
             <p>
               RUSTEZE is a go-kart racing team built on passion, engineering and teamwork. Over the years we have
@@ -52,8 +60,8 @@ function App() {
               boundaries of what a student racing team can achieve.
             </p>
           </div>
-        </div>
-      )}
+        </motion.div>
+      </motion.section>
 
       
       <motion.section

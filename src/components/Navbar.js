@@ -16,6 +16,7 @@ const Navbar = () => {
           alt="RUSTEZE Logo"
         />
       </div>
+      
 
       <button 
         className={`menu-toggle ${isMenuOpen ? 'active' : ''}`}
