@@ -25,7 +25,7 @@ function App() {
         <div className="hero-card" style={{backgroundImage: `url(${process.env.PUBLIC_URL}/images/team.jpg)`}}>
           <div className="hero-card-inner">
             <div className="hero-text">
-              <h1>The Secret Life of an <br/> <span>RUSTEZE</span> Racer!</h1>
+              <h1>The Secret Life of a <br/> <span>RUSTEZE</span> Racer!</h1>
               <p className="hero-sub">We are a passionate team competing in the Go-Kart Design Challenge (GKDC).</p>
               <button className="read-story-btn" onClick={() => setShowStory(true)}>Read Story</button>
             </div>

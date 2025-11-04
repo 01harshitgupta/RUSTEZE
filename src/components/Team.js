@@ -4,7 +4,9 @@ const Team = () => {
   const teamMembers = [
     { name: 'Ansh Verma', role: 'Electrical Head', img: '/images/ansh.jpg', email: 'Ansh@example.com' },
     { name: 'Kushal Kumar', role: 'Designing Head', img: '/images/kushal.jpg', email: 'Kushal@example.com' },
-    { name: 'Vivek', role: 'Mechanical Head', img: '/images/vivek.jpg', email: 'Vivek@example.com' }
+    { name: 'Vivek', role: 'Mechanical Head', img: '/images/vivek.jpg', email: 'Vivek@example.com' },
+    { name: 'Ayush', role: 'Mechanical Head', img: '/images/ayush.jpg', email: 'Ayush@example.com' },
+    // { name: 'Aditya', role: 'Mechanical Head', img: '/images/aditya.jpg', email: 'Aditya@example.com' }
   ];
 
   return (
