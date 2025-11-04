@@ -1,8 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 
 const Navbar = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  
   const scrollTo = (id) => {
     document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
+    setIsMenuOpen(false); // Close menu after clicking a link
   };
 
   return (
@@ -14,7 +17,18 @@ const Navbar = () => {
         />
       </div>
 
-      <ul className="navbar-links">
+      <button 
+        className={`menu-toggle ${isMenuOpen ? 'active' : ''}`}
+        onClick={() => setIsMenuOpen(!isMenuOpen)}
+        aria-expanded={isMenuOpen}
+        aria-label="Toggle navigation menu"
+      >
+        <span className="hamburger-line"></span>
+        <span className="hamburger-line"></span>
+        <span className="hamburger-line"></span>
+      </button>
+
+      <ul className={`navbar-links ${isMenuOpen ? 'active' : ''}`}>
         <li onClick={() => scrollTo("team")}>Team</li>
         <li onClick={() => scrollTo("Driver")}>Driver</li>
         <li onClick={() => scrollTo("gallery")}>Gallery</li>
