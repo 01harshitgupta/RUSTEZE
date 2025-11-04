@@ -32,11 +32,9 @@ function App() {
           </div>
         </div>
 
-        {/* Story modal/pop-up */}
-        {/** showStory state controls visibility **/}
+        
         </motion.section>
 
-      {/* story modal rendered outside the hero section so it overlays the whole page */}
       {showStory && (
         <div className="story-modal" onClick={() => setShowStory(false)}>
           <div className="story-container" onClick={(e) => e.stopPropagation()}>
