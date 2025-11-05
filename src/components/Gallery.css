@@ -32,7 +32,17 @@
   gap: 25px;
   justify-items: center;
 }
+.gallery-grid.active-blur .gallery-card:not(.active) {
+  filter: blur(2px) brightness(0.6);
+  transition: 0.2s ease;
+}
 
+
+.gallery-card.active {
+  position: relative;
+  z-index: 10;
+  box-shadow: 0 0 40px rgba(255, 90, 0, 0.6);
+}
 .gallery-card {
   position: relative;
   width: 100%;

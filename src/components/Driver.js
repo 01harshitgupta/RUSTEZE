@@ -4,8 +4,9 @@ import "./Driver.css";
 
 const Driver = () => {
   const drivers = [
-    { name: "Ansh Verma", img: "/images/ansh1.jpg", role: " Driver" },
     { name: "Kushagra Bhandhari", img: "/images/kush.jpg", role: " Lead Driver" },
+    { name: "Ansh Verma", img: "/images/ansh1.jpg", role: " Driver" },
+    
   ];
 
   return (
