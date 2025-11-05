@@ -1,0 +1,73 @@
+.events {
+  text-align: center;
+  padding: 4rem 2rem;
+  background: radial-gradient(circle at top left, #0d0d0d, #121212, #1a1a1a);
+  color: white;
+  font-family: 'Poppins', sans-serif;
+}
+
+.events h2 {
+  font-size: 2.5rem;
+  color: #ff4b2b;
+  margin-bottom: 3rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.event-card {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  padding: 2rem;
+  margin: 1rem auto;
+  max-width: 500px;
+  backdrop-filter: blur(10px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.event-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(255, 75, 43, 0.4);
+}
+
+.event-card h3 {
+  color: #ff4b2b;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.event-card p {
+  color: #e0e0e0;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.countdown {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #fff;
+  letter-spacing: 1px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.countdown span {
+  color: #ff4b2b;
+  min-width: 50px;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  .event-card {
+    width: 90%;
+  }
+
+  .events h2 {
+    font-size: 2rem;
+  }
+
+  .countdown {
+    font-size: 1.1rem;
+  }
+}

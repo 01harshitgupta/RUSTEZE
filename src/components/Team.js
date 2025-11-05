@@ -1,5 +1,5 @@
 import React from 'react';
-
+import "./Team.css";
 const Team = () => {
   const teamMembers = [
     { name: 'Ansh Verma', role: 'Electrical Head', img: '/images/ansh1.jpg', email: 'Ansh@example.com' },

@@ -1,0 +1,110 @@
+.contact-section {
+  background: linear-gradient(180deg, #0d0d0d, #121212, #1a1a1a);
+  padding: 100px 5%;
+  color: white;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.contact-title {
+  font-family: "Orbitron", sans-serif;
+  font-size: 2.8rem;
+  color: #ff7b00;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.contact-subtitle {
+  color: #ccc;
+  font-size: 1.1rem;
+  max-width: 700px;
+  margin: 0 auto 50px auto;
+  line-height: 1.6;
+}
+
+.contact-card {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 20px;
+  padding: 40px 60px;
+  display: inline-block;
+  position: relative;
+  backdrop-filter: blur(6px);
+  box-shadow: 0 0 40px rgba(255, 100, 0, 0.3);
+  text-align: center;
+  animation: floatCard 6s ease-in-out infinite;
+}
+
+@keyframes floatCard {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+.glow-circle {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(255, 90, 0, 0.4), transparent);
+  top: -60px;
+  left: calc(50% - 100px);
+  filter: blur(30px);
+  z-index: 0;
+}
+
+.contact-info-box {
+  margin: 20px 0;
+  z-index: 2;
+  position: relative;
+}
+
+.contact-label {
+  font-size: 1.1rem;
+  color: #ff7b00;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.contact-info {
+  font-size: 1.2rem;
+  color: #fff;
+  font-weight: 500;
+}
+
+.contact-mail-btn {
+  background: linear-gradient(90deg, #ff3131, #ff7b00);
+  color: white;
+  border: none;
+  padding: 14px 40px;
+  font-size: 1rem;
+  border-radius: 50px;
+  margin-top: 25px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 25px rgba(255, 90, 0, 0.4);
+}
+
+.contact-mail-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 40px rgba(255, 90, 0, 0.7);
+}
+
+.social-links {
+  margin-top: 50px;
+}
+
+.social-links a {
+  color: #ff7b00;
+  font-size: 1.8rem;
+  margin: 0 15px;
+  transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #ff3131;
+  text-shadow: 0 0 20px #ff7b00;
+}

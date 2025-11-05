@@ -140,11 +140,10 @@ body {
   font-family: 'Poppins', sans-serif;
   color: white;
   overflow-x: hidden;
+  overflow-y: visible;
   perspective: 1000px;
-  /* Use the same background image as the hero across all pages.
-     The image lives in public/images; reference it from root (works with CRA).
-     A semi-transparent dark gradient keeps content readable. */
-  background: linear-gradient(rgba(8,8,10,0.6), rgba(8,8,10,0.6)), url('/public/images/image1.jpg') center/cover fixed no-repeat;
+
+  background: linear-gradient(rgba(8,8,10,0.6), rgba(8,8,10,0.6)), url('/public/images/hero-background.png') center/cover fixed no-repeat;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

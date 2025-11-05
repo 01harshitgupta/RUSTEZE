@@ -1,27 +1,37 @@
-import React from 'react';
+import React from "react";
+
+import "./Driver.css";
 
 const Driver = () => {
-  const teamMembers = [
-    { name: 'Ansh Verma',  img: '/images/ansh1.jpg' },
-    { name: 'Kushagra Bhandhari', img: '/images/kush.jpg' },
-    
+  const drivers = [
+    { name: "Ansh Verma", img: "/images/ansh1.jpg", role: " Driver" },
+    { name: "Kushagra Bhandhari", img: "/images/kush.jpg", role: " Lead Driver" },
   ];
 
   return (
-    <div className="team">
-      <h2>Our Driver's</h2>
-      <div className="team-cards">
-        {teamMembers.map((member, index) => (
-          <div key={index} className="card">
-            <img src={member.img} alt={member.name} />
-            <div className="card-info">
-              <h3>{member.name}</h3>
-            
+    <section className="driver-section" id="Driver">
+      <div className="driver-container">
+        <h2 className="driver-title">
+          Our <span>Drivers</span>
+        </h2>
+        <p className="driver-subtitle">
+          Meet the skilled racers who bring RUSTEZE to life on the track.
+        </p>
+
+        <div className="driver-grid">
+          {drivers.map((driver, index) => (
+            <div key={index} className="driver-card">
+              <div className="driver-img-wrap">
+                <img src={driver.img} alt={driver.name} className="driver-img" />
+                <div className="driver-glow"></div>
+              </div>
+              <h3 className="driver-name">{driver.name}</h3>
+              <p className="driver-role">{driver.role}</p>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
-    </div>
+    </section>
   );
 };
 

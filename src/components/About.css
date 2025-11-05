@@ -1,0 +1,43 @@
+.about-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+  padding: 80px 5%;
+  background: #121212;
+  border-top: 2px solid #ff3131;
+}
+
+.about-content {
+  flex: 1 1 45%;
+  color: #fff;
+}
+
+.about-content h2 {
+  font-family: "Orbitron", sans-serif;
+  color: #ff7b00;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.about-content p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.about-content .mission {
+  font-weight: bold;
+  color: #ff3131;
+}
+
+.about-image {
+  flex: 1 1 45%;
+}
+
+.about-image img {
+  width: 100%;
+  border-radius: 20px;
+  box-shadow: 0 0 30px rgba(255, 90, 0, 0.3);
+}
