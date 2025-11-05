@@ -59,10 +59,7 @@ const Blog = () => {
               title: "Building the Chassis",
               desc: "From sketch to weld — teamwork, precision, and passion built this frame.",
             },
-            {
-              title: "Driver’s Q&A",
-              desc: "Our lead driver shares racing strategies and pre-race rituals.",
-            },
+          
           ].map((item, i) => (
             <motion.div
               className="blog-card"

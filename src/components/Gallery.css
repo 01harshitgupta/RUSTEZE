@@ -120,14 +120,14 @@
 }
 
 .modal-content {
-  position: relative;
+  position: fixed;
   max-width: 90%;
   max-height: 80%;
 }
 
 .modal-image {
-  width: 100%;
-  height: auto;
+  width: 50%;
+  height: 50%;
   border-radius: 10px;
   box-shadow: 0 0 30px rgba(255, 90, 0, 0.5);
 }
